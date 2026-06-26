@@ -1,0 +1,12 @@
+Swap two numbers (without using a third variable)
+
+d=5
+e=8
+e,d=d,e
+#Right side is evaluated first e, d
+#This creates a temporary tuple:
+
+#Left side is assigned
+#Now Python unpacks the tuple:
+print("d=",d)
+print("e=",e)
