@@ -1,0 +1,13 @@
+#7.Count digits in a number.
+#8.Sum of digits.
+
+num=7836574 #7
+count=0
+some=0
+while(num>1):
+    extracted_digit=num%10
+    some+=extracted_digit
+    count+=1
+    num=num//10
+print(" total digits:",count)
+print("sum",some)
