@@ -1,0 +1,4 @@
+#6.Reverse a number.
+s=5
+for i in range(s,0,-1):
+    print(i, end=" ")
