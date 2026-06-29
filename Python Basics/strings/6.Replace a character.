@@ -1,0 +1,39 @@
+6.Replace a character.
+Strings in Python are immutable, which means you cannot change individual characters in a string.
+
+s="Ayushi"
+new=""
+for ch in s:
+    if ch=='u':
+        new+='o'
+    else:
+        new+=ch
+print(new)
+o/p-->Ayoshi
+Instead of doing only 5 operations, Python actually copies
+1 + 2 + 3 + 4 + 5=15
+tc=O(n²)
+sc=O(n)
+
+
+
+2nd approach-->
+s = s.replace('u', 'o')
+print(s)
+o/p-->Ayoshi
+tc=O(n)
+sc=O(n)
+
+
+
+3rd approach-->
+s="Ayushi"
+chars=list(s)
+for i in range(len(chars)):
+    if chars[i]=='u':
+       chars[i]='o'
+s="".join(chars)
+print(s)
+
+tc=O(n)
+sc=O(n)
