@@ -1,0 +1,68 @@
+1.Reverse a string.
+
+#1 approach
+
+s ="hello"
+n=len(s)
+for i in range(n-1,-1,-1):
+    print(s[i],end="")
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+
+
+#2nd approach
+
+(main logic): rev = ch + rev
+1st iteration:
+rev = "h" + ""
+rev = "h"
+2nd iteration:
+rev = "e" + "h"
+rev = "eh"
+.
+.
+.
+rev=""
+for ch in s:
+ rev=ch+rev
+print(rev)
+o/p-->olleh
+Time Complexity: O(n²) because string concatenation creates new strings repeatedly.
+
+
+
+#3rd approach
+
+left=0
+chars=list(s)
+right=len(chars)-1
+while left<right :
+    chars[left], chars[right]= chars[right], chars[left]
+    left+=1
+    right-=1
+print("".join(chars))
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+
+
+#4th approach
+
+Using slicing
+string[start : stop : step]
+start = omitted
+stop = omitted
+step = -1
+print(s[::-1])
+Time: O(n)
+Space: O(n)
+
+
+
+#5th approach
+
+print("".join(reversed(s)))
+Time: O(n)
+Space: O(n)
