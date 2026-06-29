@@ -1,0 +1,10 @@
+5.Remove spaces.
+s="ayushi is a software engineer"
+for ch in s:
+    if ch==" ":
+        continue
+    else:
+        print(ch,end="")
+        
+Time Complexity: O(n)
+Space Complexity: O(1)
