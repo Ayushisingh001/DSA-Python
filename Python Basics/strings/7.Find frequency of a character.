@@ -1,0 +1,13 @@
+7.Find frequency of a character.
+
+s="aayushi"
+target='a'
+count=0
+for ch in s.lower():
+    if ch==target.lower():
+        count+=1
+    
+print(count)
+
+Time Complexity: O(n)
+Space Complexity: O(1)
