@@ -1,1 +1,17 @@
+Find first non-repeating character.
 
+    if ch in freq:
+        freq[ch]+=1
+    else:
+        freq[ch]=1
+
+for ch in s1:
+     if freq[ch]==1:
+         print(ch,end="")
+         break
+else:
+      print("No non-repeating character")
+
+o/p-->o
+tc=O(n)
+sc=O(n)
