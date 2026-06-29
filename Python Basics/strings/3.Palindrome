@@ -1,0 +1,31 @@
+3.Check palindrome.
+
+s="madam"
+if "".join(reversed(s))==s:
+    print("palindrome")
+else:
+    print("not palindrome")
+o/p-->palindrome
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+
+
+#optimized approach-->
+
+se="ayushi"
+right=len(se)-1
+left=0
+
+while(left<right):
+    if(se[left]!=se[right]):
+        print("not palindrome")
+        break
+    left+=1
+    right-=1
+else:
+        print("palindrome")
+
+o/p-->not palindrome
+Time Complexity: O(n)
+Space Complexity: O(1)
