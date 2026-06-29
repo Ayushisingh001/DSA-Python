@@ -1,6 +1,5 @@
 2.Count vowels.
 
-
 s="ayushi"
 count=0
 for ch in str:
