@@ -3,3 +3,34 @@
 1st approach-->by using dictionary
 Store the frequency of every character in a dictionary.
 Increase counts for the first string and decrease counts for the second string.
+
+s1="listen"
+s2="silent"
+if len(s1)!=len(s2):
+    print("not anagram")
+else:
+    freq={}
+    for ch in s1:
+        if ch in freq:
+            freq[ch]+=1
+        else:
+            freq[ch]=1
+    for ch in s2:
+        if ch in freq:
+            freq[ch]-=1
+        else:
+            freq[ch]=-1
+
+    is_anagram = True
+
+    for values in freq.values():
+        if values!=0:
+            is_anagram=False
+
+if is_anagram:
+    print("anagram")
+else:
+    print("not an anagram")
+
+tc=O(n)
+sc=O(n)
