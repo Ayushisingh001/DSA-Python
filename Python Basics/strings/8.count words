@@ -1,0 +1,17 @@
+8.count words
+
+A word starts when:
+The current character is not a space.
+Either it is the first character of the string or the previous character is a space.
+
+s="I love Python"
+count=0
+for i in range(len(s)):
+    if s[i]!=" ":
+        if i==0 or s[i-1]==" ":
+         count+=1
+print(count)
+
+  Complexity	Value
+Time Complexity	O(n)
+Space Complexity	O(1
