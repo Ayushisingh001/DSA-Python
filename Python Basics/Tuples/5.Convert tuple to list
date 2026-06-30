@@ -1,1 +1,17 @@
 5.Convert tuple to list
+
+t = (1, 2, 3, 4, 5)
+
+l = list(t)
+print(l)
+TC: O(n)
+SC: O(n)
+
+
+t=(1,2,3,4,5)
+list=[]
+for i in t:
+        list.append(i)
+print(list)
+TC: O(n)
+SC: O(n)
