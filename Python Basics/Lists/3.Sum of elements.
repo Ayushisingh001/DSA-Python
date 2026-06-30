@@ -1,0 +1,21 @@
+3.Sum of elements.
+
+l=[2,7,8,9,3,2]
+n=len(l)
+sum=0
+for i in range(n):
+    sum+=l[i]
+print(sum)
+
+Time: O(n)
+Space: O(1)
+
+
+
+another approach-->
+l=[2,7,8,9,3,2]
+n=len(l)
+print(sum(l))
+
+Time: O(n)
+Space: O(1)
