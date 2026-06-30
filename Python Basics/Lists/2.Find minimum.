@@ -1,0 +1,8 @@
+2.Find minimum.
+
+l=[2,4,6,1,9]
+print(min(l))
+
+o/p-->1
+tc:O(n)
+sc:O(1)
