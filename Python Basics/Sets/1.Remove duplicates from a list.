@@ -1,0 +1,26 @@
+1. Remove duplicates from a list.
+
+1st approach-->
+-one of the most common set questions in Python.
+   A set does not preserve the original order.
+-  A set can never contain duplicate elements.
+l=[1,2,3,4,6,2,1]
+l=list(set(l))
+print(l)
+TC: O(n)
+SC: O(n)
+
+
+2nd approach-->
+Method 2: Using a Set While Preserving Order
+l=[1,2,3,4,6,2,1]
+
+seen=set()
+res=[]
+for i in l:
+    if i not in seen:
+        seen.add(i)
+        res.append(i)
+print(res)
+TC: O(n)
+SC: O(n)
