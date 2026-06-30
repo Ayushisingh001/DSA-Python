@@ -6,3 +6,5 @@ print(t)
 t = ("apple", "banana", "mango")
 print(t)
 
+t=(1,)
+print(t)
