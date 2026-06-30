@@ -7,4 +7,4 @@ t = ("apple", "banana", "mango")
 print(t)
 
 t=(1,)
-print(t)
+print(t) #when u want to store only 1 element
