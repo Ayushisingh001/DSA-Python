@@ -1,1 +1,22 @@
 2.Count occurrences
+
+1st approach-->
+using a function called count
+
+t=(1,2,3,4,2,4,2,5)
+print(t.count(2))
+(TC): O(n)
+ (SC): O(1)
+
+
+
+2nd approach-->
+
+t=(1,2,3,4,2,4,2,5)
+count=0
+for i in t:
+    if i==2:
+        count+=1
+print(count)
+(TC): O(n)
+(SC): O(1)
