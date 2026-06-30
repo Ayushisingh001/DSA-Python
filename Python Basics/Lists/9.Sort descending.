@@ -1,1 +1,23 @@
 9.Sort descending.
+
+imp-->
+Ascending Bubble Sort: if l[j] > l[j + 1]
+Descending Bubble Sort: if l[j] < l[j + 1]
+
+1st approach-->
+l = [4, 8, 9, 2, 5, 1] #9,8,5,4,2,1
+
+l.sort(reverse=True)
+print(l)
+TC: O(n log n)
+SC: O(n)
+
+
+
+2nd approach-->
+l = [4, 8, 9, 2, 5, 1] #9,8,5,4,2,1
+
+desc=sorted(l,reverse=True)
+print(desc)
+TC: O(n log n)
+SC: O(n)
