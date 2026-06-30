@@ -1,1 +1,20 @@
 8.Sort ascending.
+
+1st approach-->
+l = [4, 8, 9, 2, 5, 1]
+l.sort()
+print(l)
+
+Time Complexity: O(n log n)
+Space Complexity: O(n)
+
+
+
+2nd approach-->
+l = [7, 2, 9, 1, 5]
+new_list = sorted(l)
+print(new_list)
+                -->[1, 2, 5, 7, 9]
+
+Time Complexity: O(n log n)
+Space Complexity: O(n)
