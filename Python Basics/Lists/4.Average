@@ -1,0 +1,12 @@
+4.Average
+
+l=[2,7,8,9,3,2]
+n=len(l)
+sum=0
+for i in range(n):
+    sum+=l[i]
+avg=sum/n
+print(avg)
+
+Time Complexity: O(n)
+Space Complexity: O(1)
