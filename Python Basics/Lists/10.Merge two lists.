@@ -1,1 +1,37 @@
 10.Merge two lists.
+
+1st approach-->l + l1 → simplest, creates a new list.
+l = [1,2,3,4] 
+l1=[5,6,7,8]
+print(l+l1)
+o/p-->[1, 2, 3, 4, 5, 6, 7, 8]
+
+tc=O(n + m)
+sc=O(n + m)
+
+
+
+2nd approach-->extend() → modifies the existing list.
+l = [1, 2, 3, 4]
+l1 = [5, 6, 7, 8]
+l.extend(l1)
+print(l)
+TC: O(m)
+SC: O(1)
+
+
+
+3rd approach-->
+l = [1,2,3,4] 
+l1=[5,6,7,8]
+res=[]
+
+for num in l:
+    res.append(num)
+
+for num in l1:
+    res.append(num)
+     print(res)
+TC: O(n + m)
+SC: O(n + m)
+
