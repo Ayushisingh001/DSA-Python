@@ -1,0 +1,34 @@
+5.Remove duplicates.
+
+If the interviewer gives an unsorted array, they usually expect the dictionary/set approach.
+If they specifically say the array is sorted, they usually expect the two-pointer approach because 
+it uses constant extra space.
+
+1st approach-->
+l=[2,7,8,9,3,2,7]
+n=len(l)
+
+seen={}               <-----
+result=[]
+for num in l:
+    if num not in seen:
+        seen[num]=1    <-----
+        result.append(num)
+print(result)
+tc=O(n)
+sc=O(n)
+
+
+
+2nd approach-->
+can make use of set
+
+seen=set()              <----
+result=[]
+for num in l:
+    if num not in seen:
+        seen.add=num    <----
+        result.append(num)
+print(result)
+tc=O(n)
+sc=O(n)
