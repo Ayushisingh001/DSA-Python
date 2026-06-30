@@ -1,1 +1,8 @@
 1.Create a tuple.
+
+t=(1,2,3,4,5)
+print(t)
+
+t = ("apple", "banana", "mango")
+print(t)
+
