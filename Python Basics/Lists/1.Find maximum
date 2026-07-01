@@ -1,4 +1,4 @@
-1.Find maximum.
+1.Find maximum./
 
 l=[1,2,3,4,9,7]
 print(max(l))
