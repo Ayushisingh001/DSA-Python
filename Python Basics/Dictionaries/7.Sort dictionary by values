@@ -1,6 +1,6 @@
 7.Sort dictionary by values
 
--_->ascending order
+--->ascending order
 marks = {
     "Alice": 85,
     "Bob": 92,
