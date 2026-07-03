@@ -1,1 +1,17 @@
 3.Count character frequency.
+
+-It wants the frequency of each character.
+s = "applesssss"
+freq={}
+for i in s:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+print(freq)
+
+o/p-->{'a': 1, 'p': 2, 'l': 1, 'e': 1, 's': 5}
+TC = O(n)
+SC = O(k)
+n = length of the string
+k = number of unique characters in the string
