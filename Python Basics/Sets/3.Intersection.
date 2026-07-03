@@ -1,1 +1,24 @@
 3.Intersection.
+
+#1st approach
+s1={1,2,3,4}
+s2={5,4,7,3}
+
+result=set()
+for i in s1:
+    if i in s2:
+        result.add(i)
+
+print(result)
+TC=O(n) (average)
+SC=O(k)
+
+#2nd approach
+print(s1.intersection(s2))
+TC=O(min(n, m))
+SC=O(k)
+
+#3rd approach
+print(s1 & s2)
+TC = O(min(n, m))
+SC = O(k)
