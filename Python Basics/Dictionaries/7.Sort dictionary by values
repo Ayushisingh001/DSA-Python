@@ -1,1 +1,26 @@
 7.Sort dictionary by values
+
+-_->ascending order
+marks = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "David": 90
+}
+sorted_dict = dict(sorted(marks.items(), key=lambda item: item[1]))
+print(sorted_dict)
+o/p-->{'Charlie': 78, 'Alice': 85, 'David': 90, 'Bob': 92}
+
+--->descending order
+marks = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "David": 90
+}
+sorted_dict = dict(sorted(marks.items(), key=lambda item: item[1], reverse=True))
+print(sorted_dict)
+o/p-->{'Bob': 92, 'David': 90, 'Alice': 85, 'Charlie': 78}
+
+TC = O(n log n)
+SC = O(n)
