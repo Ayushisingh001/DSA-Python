@@ -1,1 +1,24 @@
 1.Store student details.
+
+
+stud={
+    "name":"ayushi singh",
+    "roll-no":2223800,
+    "class":"LY CORE-5",
+    "Department":"Core",
+     "cgpa":8.5
+}
+
+print(stud)
+o/p-->
+{'name': 'ayushi singh', 'roll-no': 2223800, 'class': 'LY CORE-5', 'Department': 'Core', 'cgpa': 8.5}
+
+TC = O(1) (creating a fixed-size dictionary)
+SC = O(1)
+
+print(stud["class"])
+print(stud["name"])
+
+o/p-->
+LY CORE-5
+ayushi singh
