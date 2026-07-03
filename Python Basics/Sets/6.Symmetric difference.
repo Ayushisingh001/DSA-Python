@@ -1,1 +1,43 @@
 6.Symmetric difference.
+
+-two sets which has common elements in it gets eliminated here
+
+s1 = {1, 2, 3, 4}
+s2 = {3, 4, 5, 6}
+Only in s1:    {1, 2}
+Common:        {3, 4}
+Only in s2:    {5, 6}
+Symmetric Difference
+= {1, 2, 5, 6}
+
+
+
+# 1st approach
+s1 = {1, 2, 3, 4}
+s2 = {3, 4, 5, 6}
+result = set()
+for i in s1:
+    if i not in s2:
+        result.add(i)
+
+for i in s2:
+    if i not in s1:
+        result.add(i)
+print(result)
+
+o/p-->{1, 2, 5, 6}
+TC = O(n + m)
+SC = O(n + m)
+
+
+
+#2nd approach
+print(s1 ^ s2)
+TC = O(n + m)
+SC = O(n + m)
+
+
+
+print(s1.symmetric_difference(s2))
+TC = O(n + m)
+SC = O(n + m)
