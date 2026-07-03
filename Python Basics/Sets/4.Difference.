@@ -1,1 +1,19 @@
 4.Difference.
+s1={1,2,3,4}
+s2={3,4,5,6}
+print(s1-s2)
+
+o/p-->{1, 2}
+# s1 - s2
+TC = O(len(s1)) = O(n)
+SC = O(k)
+
+
+s1={1,2,3,4}
+s2={3,4,5,6}
+print(s2-s1)
+
+o/p-->{5, 6}
+# s1 - s2
+TC = O(len(s2)) = O(m)
+SC = O(k)
