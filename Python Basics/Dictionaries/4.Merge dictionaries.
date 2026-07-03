@@ -1,1 +1,39 @@
 Merge dictionaries.
+
+#1st approach
+#Without built-in methods
+
+stud1={
+    "name":"ayushi singh",
+    "class":"Ly core 5",
+    "marks":100
+}
+stud2={
+    "city":"pune",
+    "addr":"anika ecclesia-pune",
+}
+result={}
+for key in stud1:
+    result[key]=stud1[key]
+for key in stud2:
+    result[key]=stud2[key]
+print(result)
+TC = O(n + m)
+SC = O(n + m)
+
+
+
+#2nd approach
+print(stud1|stud2)
+TC = O(n + m)
+SC = O(n + m)
+n = number of keys in d1
+m = number of keys in d2
+
+
+
+3rd approach
+stud1.update(stud2)
+print(stud1)
+TC = O(m)
+SC = O(1)
