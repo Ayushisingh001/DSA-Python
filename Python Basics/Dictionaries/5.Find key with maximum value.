@@ -1,1 +1,35 @@
 Find key with maximum value.
+
+1st approach
+marks = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "David": 95
+}
+max_key = None
+max_value = float("-inf")
+
+for key in marks:
+    if marks[key] > max_value:
+        max_value = marks[key]
+        max_key = key
+
+print(max_key)
+TC = O(n)
+SC = O(1)
+
+
+2nd approach
+marks = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "David": 95
+}
+
+result = max(marks, key=marks.get)
+
+print(result)
+TC = O(n)
+SC = O(1)
