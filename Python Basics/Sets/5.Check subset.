@@ -1,1 +1,30 @@
+5.Check subset.
+#A subset means every element of one set is present in another set.
 
+#1st approach
+A={1,2}
+B={1,2,3,4}
+
+isSubset=True
+for i in A:
+    if i not in B:
+        isSubset =False
+    else:
+        isSubset =True
+print(isSubset)
+o/p-->True
+
+TC = O(n)
+SC = O(1)
+
+
+#3rd approach
+print(A<=B)
+TC = O(n)
+SC = O(1)
+
+
+#4th approach
+print(A.issubset(B))
+TC = O(n)
+SC = O(1)
