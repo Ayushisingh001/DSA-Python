@@ -1,1 +1,15 @@
 2.Count word frequency.
+#imp
+s = "apple banana apple mango banana apple"
+n=len(s)
+words=s.split()
+freq={}
+for word in words:
+    if word in freq:
+        freq[word]+=1
+    else:
+        freq[word]=1
+print(freq)
+o/p-->{'apple': 3, 'banana': 2, 'mango': 1}
+#TC = O(n)
+#SC = O(k)
