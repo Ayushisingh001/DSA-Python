@@ -1,1 +1,27 @@
 Invert dictionary
+-The Invert Dictionary question means swap the keys and values.
+student = {
+    "Alice": 101,
+    "Bob": 102,
+    "Charlie": 103
+}
+
+After inverting:
+
+{
+    101: "Alice",
+    102: "Bob",
+    103: "Charlie"
+}
+code//
+student = {
+    "Alice": 101,
+    "Bob": 102,
+    "Charlie": 103
+}
+inverse = {}
+for key in student:
+    inverse[student[key]]=key
+
+print(inverse)
+{101: 'Alice', 102: 'Bob', 103: 'Charlie'}
