@@ -1,0 +1,17 @@
+#Count Occurrences of a Target
+
+Input=[1,2,2,2,4,5]
+freq={}
+
+for num in Input:
+    if num in freq:
+        freq[num]+=1
+    else:
+        freq[num]=1
+
+target=2
+if target in freq:
+    print(freq[target])
+else:
+    print(0)
+
