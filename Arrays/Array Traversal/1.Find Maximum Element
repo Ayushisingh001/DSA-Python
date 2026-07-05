@@ -1,0 +1,8 @@
+#1.Find Maximum Element
+
+Input=[4, 2, 9, 7, 5]
+max=Input[0]
+for num in Input:
+    if num>max:
+        max=num
+print(max)
