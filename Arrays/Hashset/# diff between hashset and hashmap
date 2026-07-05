@@ -1,0 +1,42 @@
+# diff between hashset and hashmap
+
+1. Hash Map (Dictionary)
+
+A hash map stores two things:
+Key → Value
+Example:
+student = {
+    "Ayushi": 95,
+    "Rahul": 88,
+    "Ankit": 91
+}
+
+Here,
+Key        Value
+----------------
+Ayushi  -> 95
+Rahul   -> 88
+Ankit   -> 91
+
+You can access values by key:
+print(student["Ayushi"])-->95
+
+
+2. Hash Set
+
+A hash set stores only unique values.
+Example:
+nums = {5, 2, 8, 1}
+It stores
+5
+2
+8
+1
+No values are associated with them.
+
+Duplicate Example
+nums = {1, 2, 2, 3, 3, 3}
+print(nums)
+Output:
+{1, 2, 3}
+Duplicates are automatically removed.
