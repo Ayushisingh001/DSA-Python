@@ -1,0 +1,11 @@
+2.Find First Repeating Element
+
+Input=  [5,2,1,2,3,5]
+
+dict={}
+for num in Input:
+    if num in dict:
+        print(num)
+        break
+    else:
+        dict[num]=1
