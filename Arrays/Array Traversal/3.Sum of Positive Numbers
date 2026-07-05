@@ -1,0 +1,10 @@
+#Sum of Positive Numbers
+
+Input=  [-2, 5, -1, 6, 3]
+sum=0
+for num in Input:
+    if num>=1:
+       sum+=num
+    else:
+        continue
+print(sum)
