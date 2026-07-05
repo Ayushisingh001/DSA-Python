@@ -1,0 +1,9 @@
+
+2.Count Unique Elements
+s=[1,1,2,3,3,4]
+
+seen=set()
+for i in s:
+    if i not in seen:
+        seen.add(i)
+print(len(seen))
