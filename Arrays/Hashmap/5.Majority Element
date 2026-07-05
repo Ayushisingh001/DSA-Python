@@ -1,0 +1,13 @@
+#5.Majority Element
+
+s=[2,2,1,2,3,2,2]
+freq={}
+for num in s:
+    if num in freq:
+        freq[num]+=1
+    else:
+        freq[num]=1
+max=0
+if freq[num]>max:
+    max=freq[num]
+    print("majority element",num,"it's freq=",max)
