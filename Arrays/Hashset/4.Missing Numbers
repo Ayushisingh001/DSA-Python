@@ -1,0 +1,11 @@
+4.Missing Numbers
+arr1=[1,2,4,5]
+
+seen=set()
+
+for num in arr1:
+    seen.add(num)
+
+for num in range(1,6):
+    if num not in seen:
+        print(num)
