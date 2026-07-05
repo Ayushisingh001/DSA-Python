@@ -1,0 +1,12 @@
+
+#Frequency of Elements
+
+Input=  [1,2,2,3,1,2]
+
+dict={}
+for num in Input:
+    if num in dict:
+        dict[num]+=1
+    else:
+        dict[num]=1
+print(dict)
