@@ -9,3 +9,5 @@ for num in Input:
         break
     else:
         dict[num]=1
+else:
+    print("No repeating element")
