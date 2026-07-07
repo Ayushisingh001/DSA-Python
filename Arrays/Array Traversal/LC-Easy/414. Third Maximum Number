@@ -60,3 +60,5 @@ class Solution(object):
             return first
 
         return third
+TC=O(n)
+SC=O(1)
