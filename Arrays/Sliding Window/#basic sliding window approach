@@ -1,0 +1,13 @@
+#basic sliding window approach
+arr=[3,8,2,5,7,6,12]
+n=len(arr)
+w=4
+sum=0
+for i in range(w):
+    sum+=arr[i]
+    maxsum=sum
+for i in range(1,n-w+1):
+    sum=sum-arr[i-1]+arr[i+w-1]
+    maxsum=max(sum,maxsum)
+print(maxsum)
+o/p-->30 [5,7,6,12]
