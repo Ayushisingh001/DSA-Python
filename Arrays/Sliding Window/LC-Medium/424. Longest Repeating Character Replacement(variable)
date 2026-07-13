@@ -1,0 +1,61 @@
+424. Longest Repeating Character Replacement
+(variable)
+You are given a string s and an integer k. You can choose any character of the string and change 
+it to any other uppercase English character. You can perform this operation at most k times.
+
+Return the length of the longest substring containing the same letter you can get after performing the above operations.
+
+Example 1:
+Input: s = "ABAB", k = 2
+Output: 4
+Explanation: Replace the two 'A's with two 'B's or vice versa.
+
+Example 2:
+Input: s = "AABABBA", k = 1
+Output: 4
+Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA".
+The substring "BBBB" has the longest repeating letters, which is 4.
+There may exists other ways to achieve this answer too.
+--------------------------------------------------------------------------------------------------------------------------------------------
+explanation:
+( You're thinking:
+
+"The problem says replace characters, but the code never replaces anything!"
+
+That's because we don't actually need to perform the replacements. We only need to know whether it's possible 
+to make all characters in the current window the same using at most k replacements. )
+Think of it like an exam question
+
+Suppose I ask:
+Can you travel from Pune to Mumbai in under 4 hours?
+You don't actually have to travel.
+You just check if it's possible.
+This problem is the same.
+We're checking:
+Can this window be made into all one character with at most k replacements?
+--------------------------------------------------------------------------------------------------------------------------------------
+solution:
+
+class Solution(object):
+    def characterReplacement(self, s, k):
+        """
+        :type s: str
+        :type k: int
+        :rtype: int
+        """
+        max_freq=0
+        l=0
+        count={}
+        ans=0
+        for r in range(len(s)):
+            count[s[r]]=count.get(s[r],0)+1
+            max_freq=max(max_freq,count[s[r]])
+
+            while (r-l+1)-max_freq>k:
+                  count[s[l]]-=1
+                  l+=1
+            ans=max(ans,r-l+1)
+        return ans
+
+Time Complexity = O(n)
+Space Complexity: O(m)
