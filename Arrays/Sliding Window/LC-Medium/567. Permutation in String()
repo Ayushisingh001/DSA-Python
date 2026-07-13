@@ -12,4 +12,56 @@ Example 2:
 Input: s1 = "ab", s2 = "eidboaoo"
 Output: false
 ----------------------------------------------------------------------------------------------------------------------------------------
+explanation:
+Suppose you're only allowed to carry 2 books.
+
+You currently have:
+📚📚
+Someone gives you one more:
+📚📚📚
+Before walking again, you put one book down:
+📚📚
+Then someone gives you another:
+📚📚📚
+Again, you put one down:
+📚📚
+You never end up carrying 4 or 5 books, because every time you receive one, you immediately drop one.
+----------------------------------------------------------------------------------------------------------------------------------------
 solution:
+class Solution(object):
+    def checkInclusion(self, s1, s2):
+        """
+        :type s1: str
+        :type s2: str
+        :rtype: bool
+        """
+        if len(s1) > len(s2):
+            return False
+        count1={}
+        count2={}
+        for ch in s1:
+            count1[ch]=count1.get(ch,0)+1
+        for i in range(len(s1)):
+            count2[s2[i]]=count2.get(s2[i],0)+1
+
+        if count1==count2:
+           return True               #first window over
+        
+        l=0
+        for r in range(len(s1),len(s2)):  #2nd window
+            count2[s2[r]]=count2.get(s2[r],0)+1
+
+            count2[s2[l]]-=1
+              
+            if count2[s2[l]]==0:
+                del count2[s2[l]]
+
+               
+            l+=1
+
+            if count1==count2:
+                return True
+        return False
+         
+TC=O(n × m)
+SC=O(1)
