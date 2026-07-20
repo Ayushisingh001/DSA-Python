@@ -1,4 +1,4 @@
-#basic sliding window approach
+#basic sliding window approach-
 arr=[3,8,2,5,7,6,12]
 n=len(arr)
 w=4
