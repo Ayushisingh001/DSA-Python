@@ -21,6 +21,7 @@ marks = {
 sorted_dict = dict(sorted(marks.items(), key=lambda item: item[1], reverse=True))
 print(sorted_dict)
 o/p-->{'Bob': 92, 'David': 90, 'Alice': 85, 'Charlie': 78}
-
+---------------------------------------------------------------------------------------------------------
 TC = O(n log n)
 SC = O(n)
+
