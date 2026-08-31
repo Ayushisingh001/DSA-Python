@@ -24,26 +24,34 @@ Input: pattern = "aaaa", s = "dog cat cat dog"
 Output: false
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Code:
+class Solution(object):
+    def wordPattern(self, pattern, s):
+        """
+        :type pattern: str
+        :type s: str
+        :rtype: bool
+        """
+        dict1={}  # pattern -> word
+        dict2={}  #word -> pattern
+        lst=s.split()
+        if len(pattern) != len(lst):
+            return False 
 
+        for i in range(len(pattern)):
+            if pattern[i] in dict1:
+               if dict1[pattern[i]]!=lst[i]:
+                  return False
+            else:
+                dict1[pattern[i]]=lst[i]
 
+            if lst[i] in dict2:
+                if dict2[lst[i]] != pattern[i]:
+                    return False
+            else:
+                dict2[lst[i]] = pattern[i]
 
+        return True
+                   
 
-
-
-
-
-
-
-
-
-
-
-TC=
-SC=
-
-
-
-
-
-TC=
-SC=
+TC=O(n)
+SC=O(n)
