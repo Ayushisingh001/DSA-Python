@@ -22,23 +22,25 @@ Explanation: "bbaA" is also a valid answer, but "Aabb" is incorrect.
 Note that 'A' and 'a' are treated as two different characters.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 code:
+class Solution(object):
+    def frequencySort(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        dict1={}
+     
+        for ch in s:
+            if ch not in dict1:
+                dict1[ch]=1
+            else:
+                dict1[ch]+=1
+        characters=list(dict1.keys())
+        characters.sort(key=lambda x:dict1[x],reverse=True)
+        result=""
+        for ch in characters:
+            result+=ch*dict1[ch]
+        return result
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-TC=
-SC=
+TC=O(n)
+SC=O(n)
