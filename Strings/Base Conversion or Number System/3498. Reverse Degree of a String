@@ -17,7 +17,7 @@ Output: 148
 Explanation:
 
 Letter	 Index in Reversed Alphabet  	Index in String	Product
-'a'          	26                             1                      	26
+'a'          	26                             1                      26
 'b'	            25	                           2                       50
 'c'          	24	                           3                       72
 
