@@ -44,6 +44,6 @@ code:
 
         else:
             return 1+self.numberOfSteps(num-1)
-       
+       ---
 TC=O(log N)
 SC=O(log N)
