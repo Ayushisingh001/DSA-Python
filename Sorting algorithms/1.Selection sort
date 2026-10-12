@@ -24,4 +24,5 @@ print(selection_sort(arr))
 
 Time Complexity (TC): \(O(n^2)\) — Best, Average, and Worst cases.
 Space Complexity (SC): \(O(1)\) — Auxiliary space.
+
 Interview note: Selection sort is an in-place sorting algorithm, but it is generally inefficient for large arrays because its time complexity is quadratic.
