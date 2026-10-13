@@ -1,0 +1,22 @@
+Bubble Sort
+
+Bubble Sort is a sorting algorithm that compares two adjacent elements and swaps them if they are in the wrong order.
+We repeat this process until the array is sorted.
+
+
+arr = [9, 46, 24, 52, 20, 13]
+
+def bubble_sort(arr):
+    n = len(arr)
+
+    for i in range(n - 1):
+        for j in range(n - 1 - i):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+    return arr
+
+print(bubble_sort(arr))
+
+TC= O(n^2)
+SC= O(1)
