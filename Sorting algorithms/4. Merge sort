@@ -1,6 +1,5 @@
 4. Merge sort
 
-
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -32,3 +31,4 @@ print(merge_sort(arr))
 
 SC= O(n)
 TC= O(n\log n)
+
