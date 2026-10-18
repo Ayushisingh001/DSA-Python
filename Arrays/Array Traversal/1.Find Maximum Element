@@ -6,3 +6,4 @@ for num in Input:
     if num>max:
         max=num
 print(max)
+-----------------------------------------------------
